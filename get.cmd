@@ -2,10 +2,8 @@
 
 powershell set-executionpolicy -executionpolicy remotesigned -scope localmachine
 
-powershell wget https://github.com/dotdr/autoupdate/autoreboot.zip -outfile autoreboot.zip
-powershell expand-archive -force autoreboot.zip .
-
-cd autoreboot
+powershell wget https://github.com/dotdr/autoupdate/autoreboot.ps1 -outfile autoreboot.ps1
+powershell wget https://github.com/dotdr/autoupdate/setup.ps1 -outfile setup.ps1
 
 powershell unblock-file setup.ps1
 powershell unblock-file autoreboot.ps1
