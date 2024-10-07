@@ -4,6 +4,7 @@ powershell set-executionpolicy -executionpolicy remotesigned -scope localmachine
 
 powershell wget https://github.com/dotdr/autoupdate/raw/main/autoreboot.ps1 -outfile autoreboot.ps1
 powershell wget https://github.com/dotdr/autoupdate/raw/main/setup.ps1 -outfile setup.ps1
+powershell wget https://github.com/dotdr/autoupdate/raw/main/start.cmd -outfile start.cmd
 
 powershell unblock-file setup.ps1
 powershell unblock-file autoreboot.ps1
