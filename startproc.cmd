@@ -1,0 +1,1 @@
+powershell .\autoreboot.ps1
