@@ -54,7 +54,7 @@ add-content -Path $settings -Value "rcvr, $rcvr"
 add-content -Path $settings -Value "sender, $sender"
 
 schtasks /delete /tn "Monthly Reboot" /f
-schtasks /create /sc monthly /mo first /d SUN /m * /st $st /rl highest /tn "Monthly Reboot" /tr $scriptPath\start.cmd /ru "$un" /rp "$pw"
+schtasks /create /sc monthly /mo first /d SUN /m * /st $st /rl highest /tn "Monthly Reboot" /tr $scriptPath\startproc.cmd /ru "$un" /rp "$pw"
 
 $yn = read-host -prompt "Run the task now?"
 
