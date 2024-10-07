@@ -5,7 +5,7 @@ Default schedule is first sun of each month
 
 No effort was expended in the production of this script
 
-quick start
+**quick start**
 
 start powershell in admin mode
 
