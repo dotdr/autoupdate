@@ -14,3 +14,4 @@ start powershell in admin mode
 
 wget https://github.com/dotdr/autoupdate/raw/main/get.cmd -outfile get.cmd
 
+server 2016>
